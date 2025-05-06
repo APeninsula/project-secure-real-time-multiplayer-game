@@ -4,12 +4,10 @@
   "description": "Information Security 5: Secure Real-Time Multiplayer Game",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "babel-node server.js",
     "test": "PORT=3005 mocha --require @babel/register --recursive --exit --ui tdd tests/"
   },
   "dependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
     "@babel/register": "^7.7.4",
     "body-parser": "^1.19.0",
     "chai": "^4.2.0",
@@ -23,5 +21,12 @@
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.27.1",
+    "@babel/core": "^7.27.1",
+    "@babel/node": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "canvas": "^2.11.2"
+  }
 }
