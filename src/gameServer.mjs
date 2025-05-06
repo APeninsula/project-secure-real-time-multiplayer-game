@@ -87,7 +87,6 @@ const gameServer = function (io) {
     });
 
     socket.on("item-collected", ({ playerId, coinValue, coinId }) => {
-      console.log(playerId);
       // Update score for player server-side
       const scoringPlayer= activePlayers.find(
         (player) => player.id === playerId
